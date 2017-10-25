@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Address book</title>
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+		
+		<link href="css/style.css" rel="stylesheet">
+	
+		<style>
+				
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>My Address book </h1>
+				<p>Welcome</p>
+				<form id="searchForm">
+					<input type="text" name="name" placeholder="Find Someone">
+					<button type="submit" name="submit" value="submit">Search</button>
+				</form>
+			</header>
+	
+			<div id="form-container">
+				<p id="p-ajout-contact">Add new contact form</p>
+					<form id="contactInputForm">
+						<div>
+							<label class="label-flottant" for="firstNameInput">Firstname : </label>
+							<input class="input-flottant" type="text" id="firstNameInput" name="firstName" placeholder="Enter Firstname">
+						</div>
+						
+						<div>
+							<label class="label-flottant" for="lastNameInput">Lastname : </label>
+							<input class="input-flottant" type="text" id="lastNameInput" name="lastName" placeholder="Enter Lastname">
+						</div>
+						
+						<div>
+							<label class="label-flottant" for="phoneNumberInput">Phone number :</label>
+							<input class="input-flottant" type="text" id="phoneNumberInput" name="phoneNumber" placeholder="Enter Phone number">
+						</div>
+						
+							<button id="btn-add" type="submit" name="submit" value="submit">Add Contact</button>
+					</form>	
+			</div>
+			<div class="main">	
+				<h2>Directory</h2>
+				
+				<ul id="contactList">
+				
+				</ul>	
+			</div>
+			
+				<hr>
+
+		</div>
+		
+		<script src="http://chancejs.com/chance.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+		<script type="text/javascript" src="main.js"></script>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
